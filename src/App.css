@@ -1,38 +1,69 @@
-.App {
+body {
+  width: auto;
+  background-color: var(--bg-color);
+}
+/* Header */
+header {
+  padding: 1rem 0.5rem;
+  margin-bottom: 1rem;
+  background-color: var(--heading-color);
+  color: var(--font-color);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header span {
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Main */
+ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
+  /* border: 1px solid red; */
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  width: 20rem;
+  list-style: none;
+  font-size: 1.2rem;
+  background-color: var(--global-color);
+  color: var(--font-color);
+  border: 2px solid var(--secondary-color);
+  padding: 15px;
+  border-radius: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li > h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  border: 1px solid var(--font-color);
+  border-radius: 0.5rem;
+}
+
+li.global > h2 {
+  border: 1px solid var(--heading-color);
+}
+
+ul li .data {
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+ul li .data > p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+ul li.global .data > p {
+  color: var(--light-blue-color);
+}
+
+ul li .data > span {
+  font-size: 1.4rem;
+  font-weight: 600;
 }

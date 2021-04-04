@@ -1,10 +1,30 @@
-body {
+:root {
+  --primary-color: #007991;
+  --secondary-color: #BCD8C1;
+  --font-color: #FFFFFF;
+  --bg-color: #f1f1f1;
+  --heading-color: #09814A; 
+  --global-color: #222E50;
+  --light-blue-color: #5ec6d8;
+}
+
+*, html, body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 62.5%;
 }
 
 code {
