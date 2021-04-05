@@ -67,3 +67,23 @@ ul li .data > span {
   font-size: 1.4rem;
   font-weight: 600;
 }
+
+@media(max-width: 325px) {
+  li {
+    width: 15rem;
+  }
+
+  li h2 {
+    font-size: 1.4rem;
+  }
+
+  li .data > p {
+    font-size: 1.2rem;
+  }
+} 
+
+@media(min-width: 1329px) {
+  li {
+    width: 40rem;
+  }
+} 
